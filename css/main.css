@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+:root {
+  --brand-color: #338251;
+  --font-color: #597a57;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #fff;
+  color: var(--font-color);
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ヘッダー */
+
+header {
+  align-items: flex-end;
+  display: flex;
+  padding: 5px 50px;
+}
+
+.logo {
+  flex: 1 1 auto;
+  font-size: 1.6rem;
+}
+
+.logo a, .logo a:link, .logo a:visited, .logo a:hover, .logo a:active {
+  color: var(--brand-color);
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.1rem;
+}
+
+nav li {
+  margin: 10px 15px 5px;
+}
+
+nav a {
+  border-bottom: 2px solid transparent;
+  color: #252525;
+  display: block;
+  text-decoration: none;
+  transition: border 0.3s ease;
+  padding: 3px 0 5px 0;
+}
+
+nav a:link, nav a:visited {
+}
+
+nav a:hover, nav a:active {
+  border-bottom-color: #252525;
+}
+
+/* メイン */
+main {
+  flex-grow: 1;
+  padding: 50px 100px;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 100px auto;
+}
+
+h1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 3.3rem;
+}
+
+h1 img {
+  display: block;
+  margin-bottom: 0;
+  width: 200px;
+}
+
+h1 div {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-left: 10px;
+}
+
+.subTitle {
+  font-size: 1.5rem;
+  margin: 13px 5px 5px 5px;
+}
+
+.titleLink {
+  margin: 8px 5px 5px 5px;
+}
+
+.GitHub {
+  font-size: 1.3rem;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.GitHub span {
+  margin-right: 0.2em;
+}
+
+.GitHub:hover, .Github:active {
+  color: #f00;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section > div {
+  display: flex;
+}
+
+section > div > div {
+  margin: 0 10px;
+  width: 50%;
+}
+
+.description {
+  line-height: 2rem;
+}
+
+/* フッター */
+
+footer {
+  background-color: var(--brand-color);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.copyright {
+  flex: 1 1 auto;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer li {
+  display: inline-block;
+  width: 1.6em;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #ff0000;
+}
