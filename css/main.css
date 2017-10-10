@@ -3,6 +3,7 @@
 :root {
   --brand-color: #338251;
   --font-color: #597a57;
+  --page-width: 1200px;
 }
 
 * {
@@ -24,9 +25,12 @@ body {
 /* ヘッダー */
 
 header {
-  align-items: flex-end;
+  align-items: baseline;
   display: flex;
-  padding: 5px 50px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--page-width);
+  width: 100%;
 }
 
 .logo {
@@ -68,6 +72,7 @@ nav a:hover, nav a:active {
 /* メイン */
 main {
   flex-grow: 1;
+  margin: 0 auto;
   padding: 50px 100px;
 }
 
