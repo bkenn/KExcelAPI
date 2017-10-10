@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cf86cc6-dfc1-41af-a446-6405ddfca94d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/android-chrome-192x192.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/android-chrome-256x256.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/apple-touch-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/favicon-16x16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/favicon-32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/mstile-150x150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/browserconfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/safari-pinned-tab.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +18,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="117">
-                  <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+                <state relative-caret-position="645">
+                  <caret line="43" column="75" lean-forward="false" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
                   <folding />
                 </state>
               </provider>
@@ -155,12 +141,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507511086032</updated>
-      <workItem from="1507511089270" duration="17058000" />
+      <workItem from="1507511089270" duration="17158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17058000" />
+    <option name="totallyTimeSpent" value="17158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="193" y="23" width="1428" height="989" extended-state="0" />
@@ -221,8 +207,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="645">
+          <caret line="43" column="75" lean-forward="false" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
           <folding />
         </state>
       </provider>
