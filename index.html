@@ -62,23 +62,35 @@
        <p>セルへのアクセスは、シートに対してラベル（A1やB2）もしくはインデックスを指定します。そのセルに対してtoInt、toDouble、toStr等のメソッドを使いデータを取得します。</p>
       </div>
       <div>
-       <pre class="prettyprint linenums"><code class="lang-kotlin">// 簡単にファイルオープン、クローズ
-KExcel.open("file/book1.xlsx").use { workbook ->
+       <pre class="prettyprint linenums"><code class="lang-kotlin">KExcel.open("book1.xlsx").use { workbook ->
     val sheet = workbook[0]
 
     // セルの読み込み
     // セル名でのアクセス
-    println("""B7=${sheet["B7"].toStr()}""")
-    // セルのインデックスでのアクセス [x, y]
-    println("B7=${sheet[1, 6].toDouble()}")
-    println("B7=${sheet[1, 6].toInt()}")
+    println("""B2=${sheet["B2"].toStr()}""")
+
+    // インデックスでのアクセス
+    println("println("B2=${sheet[2, 1].toInt()}");");
+}</code></pre>
+      </div>
+     </div>
+    </section>
+    <section>
+     <h2>データの書き込みはもっと簡単</h2>
+     <div>
+      <div class="description">
+       <p>セルへのデータの書き込みはデータ型を意識する必要はありません。指定したセルに対して値を代入するだけです。</p>
+      </div>
+      <div>
+       <pre class="prettyprint linenums"><code class="lang-kotlin">KExcel.open("book1.xlsx").use { workbook ->
+    val sheet = workbook[0]
 
     // セルの書き込み
     sheet["A1"] = "あいうえお"
     sheet[3, 7] = 123
 
     // ファイルの書き込みも簡単に
-    KExcel.write(workbook, "file/book2.xlsx")
+    KExcel.write(workbook, "book2.xlsx")
 }</code></pre>
       </div>
      </div>

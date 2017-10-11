@@ -74,7 +74,6 @@ main {
   flex-grow: 1;
   margin: 0 auto;
   max-width: var(--page-width);
-  padding: 50px 100px;
 }
 
 .title {
@@ -113,12 +112,15 @@ h2 {
 }
 
 .titleLink {
-  margin: 8px 5px 5px 5px;
+  margin: 15px 5px 5px 5px;
 }
 
 .GitHub {
+  color: var(--brand-color);
+  border: solid 1px var(--brand-color);
+  border-radius: 1em;
   font-size: 1.3rem;
-  padding: 3px;
+  padding: 3px 1em;
   text-decoration: none;
 }
 
@@ -126,12 +128,16 @@ h2 {
   margin-right: 0.2em;
 }
 
-.GitHub:hover, .Github:active {
+.GitHub:hover, .GitHub:active {
+  border: solid 1px #f00;
   color: #f00;
+  transition: 0.7s all;
 }
 
 section {
+  background: linear-gradient(to bottom, #efffef, #fff);
   margin-bottom: 40px;
+  padding: 50px 50px;
 }
 
 section > div {
@@ -176,8 +182,8 @@ footer a {
   color: #ffffff;
 }
 
-footer a:hover {
-  color: #ff0000;
+footer a:hover, footer a:active {
+  color: #b8ffaf;
 }
 
 /* ソースコードの色付け */
@@ -191,6 +197,7 @@ code {
 
 li.L0, li.L1, li.L2, li.L3, li.L4,
 li.L5, li.L6, li.L7, li.L8, li.L9 {
+  color: #000;
   list-style-type: decimal !important;
   margin-left: 2em;
   padding-left: 16px;
