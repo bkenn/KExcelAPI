@@ -14,6 +14,7 @@
 }
 
 body {
+  align-items: center;
   background-color: #fff;
   color: var(--font-color);
   display: flex;
@@ -28,7 +29,6 @@ header {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
-  max-width: var(--page-width);
   padding: 10px 50px;
   width: 100%;
 }
