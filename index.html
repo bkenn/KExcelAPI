@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- 使ったツールとか -->
+
   <!-- logo -->
   <!-- https://www.designevo.com/ -->
 
@@ -8,9 +14,12 @@
   <!-- https://www.webcreatorbox.com/tech/favicon -->
   <!-- https://realfavicongenerator.net/ -->
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- コードをHTMLに -->
+  <!-- http://www.netyasun.com/syntaxhighlighter/source-escape.html -->
+
+  <!-- コードに色付け -->
+  <!-- https://github.com/google/code-prettify -->
+
   <title>KExcelAPI</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono">
@@ -53,29 +62,24 @@
        <p>セルへのアクセスは、シートに対してラベル（A1やB2）もしくはインデックスを指定します。そのセルに対してtoInt、toDouble、toStr等のメソッドを使いデータを取得します。</p>
       </div>
       <div>
-       <script src="https://gist.github.com/webarata3/decec8b740f1786c22eb634fc05e5f07.js"></script>
-      </div>
-     </div>
-    </section>
-    <section>
-     <h2>セルへのアクセスはA1、B2等のラベルでOK</h2>
-     <div>
-      <div class="description">
-       <p>セルへのアクセスは、シートに対してラベル（A1やB2）もしくはインデックスを指定します。そのセルに対してtoInt、toDouble、toStr等のメソッドを使いデータを取得します。</p>
-      </div>
-      <div>
-       <script src="https://gist.github.com/webarata3/decec8b740f1786c22eb634fc05e5f07.js"></script>
-      </div>
-     </div>
-    </section>
-    <section>
-     <h2>セルへのアクセスはA1、B2等のラベルでOK</h2>
-     <div>
-      <div class="description">
-       <p>セルへのアクセスは、シートに対してラベル（A1やB2）もしくはインデックスを指定します。そのセルに対してtoInt、toDouble、toStr等のメソッドを使いデータを取得します。</p>
-      </div>
-      <div>
-       <script src="https://gist.github.com/webarata3/decec8b740f1786c22eb634fc05e5f07.js"></script>
+       <pre class="prettyprint linenums"><code class="lang-kotlin">// 簡単にファイルオープン、クローズ
+KExcel.open("file/book1.xlsx").use { workbook ->
+    val sheet = workbook[0]
+
+    // セルの読み込み
+    // セル名でのアクセス
+    println("""B7=${sheet["B7"].toStr()}""")
+    // セルのインデックスでのアクセス [x, y]
+    println("B7=${sheet[1, 6].toDouble()}")
+    println("B7=${sheet[1, 6].toInt()}")
+
+    // セルの書き込み
+    sheet["A1"] = "あいうえお"
+    sheet[3, 7] = 123
+
+    // ファイルの書き込みも簡単に
+    KExcel.write(workbook, "file/book2.xlsx")
+}</code></pre>
       </div>
      </div>
     </section>
@@ -93,5 +97,6 @@
     </ul>
    </div>
   </footer>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
  </body>
 </html>

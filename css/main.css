@@ -28,8 +28,8 @@ header {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   max-width: var(--page-width);
+  padding: 10px 50px;
   width: 100%;
 }
 
@@ -73,6 +73,7 @@ nav a:hover, nav a:active {
 main {
   flex-grow: 1;
   margin: 0 auto;
+  max-width: var(--page-width);
   padding: 50px 100px;
 }
 
@@ -87,7 +88,6 @@ h1 {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 3.3rem;
 }
 
 h1 img {
@@ -97,7 +97,7 @@ h1 img {
 }
 
 h1 div {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 h2 {
@@ -177,4 +177,20 @@ footer a {
 
 footer a:hover {
   color: #ff0000;
+}
+
+/* ソースコードの色付け */
+/* https://github.com/google/code-prettify */
+
+code {
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+li.L0, li.L1, li.L2, li.L3, li.L4,
+li.L5, li.L6, li.L7, li.L8, li.L9 {
+  list-style-type: decimal !important;
+  margin-left: 2em;
+  padding-left: 16px;
 }
