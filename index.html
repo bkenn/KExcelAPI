@@ -20,6 +20,8 @@
   <!-- コードに色付け -->
   <!-- https://github.com/google/code-prettify -->
 
+  <meta name="description" content="Kotlin用のApache POIのラッパーライブラリーの紹介ページです。">
+
   <title>KExcelAPI</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono">
@@ -92,6 +94,27 @@
     // ファイルの書き込みも簡単に
     KExcel.write(workbook, "book2.xlsx")
 }</code></pre>
+      </div>
+     </div>
+    </section>
+    <section>
+     <h2>使い方</h2>
+     <div>
+      <div class="description">
+       <p>Gradleにリポジトリーを追加してライブラリーを読み込みます。依存しているのは<a href="https://poi.apache.org/">POIのライブラリー</a>だけです。</p>
+       <p>ライブラリーの準備ができたら、使いたいソースで、「import link.arata.kexcelapi.*」します。</p>
+      </div>
+      <div>
+       <pre class="prettyprint linenums"><code class="lang-gradle">repositories {
+    maven {
+        url 'https://raw.githubusercontent.com/<wbr>webarata3/maven/master/repository'
+    }
+}
+
+dependencies {
+    compile 'link.webarata3.kexcelapi:kexcelapi:0.5.0'
+}</code></pre>
+       <pre class="prettyprint linenums"><code class="lang-kotlin">import link.webarata3.kexcelapi.*</code></pre>
       </div>
      </div>
     </section>

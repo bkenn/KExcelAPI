@@ -23,6 +23,18 @@ body {
   min-height: 100vh;
 }
 
+a {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+a:link, a:visited {
+}
+
+a:hover, a:active {
+  color: #f00;
+}
+
 /* ヘッダー */
 
 header {
@@ -135,7 +147,8 @@ h2 {
 }
 
 section {
-  background: linear-gradient(to bottom, #f3fff3, #fff);
+  background: linear-gradient(to bottom, #fff 1%, #edfff4, #fff);
+//  background: radial-gradient(#e4ffea 5px, #fff);
   margin-bottom: 40px;
   padding: 50px 50px;
 }
@@ -151,6 +164,10 @@ section > div > div {
 
 .description {
   line-height: 2rem;
+}
+
+section pre:nth-child(2) {
+  margin-top: 20px;
 }
 
 /* フッター */
@@ -183,7 +200,7 @@ footer a {
 }
 
 footer a:hover, footer a:active {
-  color: #b8ffaf;
+  color: #bdffb6;
 }
 
 /* ソースコードの色付け */
