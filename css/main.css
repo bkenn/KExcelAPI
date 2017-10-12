@@ -206,7 +206,7 @@ li.L5, li.L6, li.L7, li.L8, li.L9 {
 
   section > div > div {
     margin: 0 10px;
-    /*width: calc(100% - 20px);*/
+    width: 100%;
   }
 
   .prettyprint {
