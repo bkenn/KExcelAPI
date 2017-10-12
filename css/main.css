@@ -4,6 +4,7 @@
   --brand-color: #338251;
   --font-color: #597a57;
   --page-width: 1200px;
+  --side-margin: 50px;
 }
 
 * {
@@ -38,7 +39,7 @@ a:hover, a:active {
 /* ヘッダー */
 
 header {
-  padding: 10px 50px;
+  padding: 10px var(--side-margin);
   width: 100%;
 }
 
@@ -119,7 +120,7 @@ h2 {
 section {
   background: linear-gradient(to bottom, #fff 1%, #edfff4, #fff);
   margin-bottom: 40px;
-  padding: 50px 50px;
+  padding: 50px var(--side-margin);
 }
 
 section > div {
@@ -146,7 +147,7 @@ footer {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 10px var(--side-margin);
   width: 100%;
 }
 
@@ -198,6 +199,18 @@ li.L5, li.L6, li.L7, li.L8, li.L9 {
 @media screen and (max-width: 640px) {
   body {
     display: block;
+  }
+
+  header {
+    padding: 10px calc(var(--side-margin) / 3);
+  }
+
+  section {
+    padding: 50px calc(var(--side-margin) / 3);
+  }
+
+  footer {
+    padding: 10px calc(var(--side-margin) / 3);
   }
 
   section > div {
