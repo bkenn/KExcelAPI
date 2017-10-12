@@ -219,11 +219,19 @@ li.L5, li.L6, li.L7, li.L8, li.L9 {
 
   section > div > div {
     margin: 0 10px;
-    width: 100%;
+    width: calc(100% - 20px);
   }
 
   .prettyprint {
     overflow: scroll;
-    word-wrap:normal;
+    word-wrap: normal;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer ul {
+    display: block;
   }
 }
