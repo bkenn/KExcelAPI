@@ -184,7 +184,6 @@ code {
   font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   font-size: 0.8rem;
   line-height: 1.4rem;
-  min-width: 500px;
 }
 
 li.L0, li.L1, li.L2, li.L3, li.L4,
@@ -197,6 +196,10 @@ li.L5, li.L6, li.L7, li.L8, li.L9 {
 
 /* スマホ */
 @media screen and (max-width: 640px) {
+  main {
+    max-width: 640px;
+  }
+
   section > div {
     display: block;
   }
