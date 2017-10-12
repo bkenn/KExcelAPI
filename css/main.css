@@ -177,7 +177,7 @@ footer a:hover, footer a:active {
 /* https://github.com/google/code-prettify */
 
 .prettyprint {
-  min-width: 500px;
+  /*min-width: 500px;*/
 }
 
 code {
@@ -196,8 +196,8 @@ li.L5, li.L6, li.L7, li.L8, li.L9 {
 
 /* スマホ */
 @media screen and (max-width: 640px) {
-  main {
-    max-width: 640px;
+  html {
+    font-size: 10px;
   }
 
   section > div {
@@ -206,6 +206,10 @@ li.L5, li.L6, li.L7, li.L8, li.L9 {
 
   section > div > div {
     margin: 0 10px;
-    width: 100%;
+  }
+
+  .prettyprint {
+    overflow: scroll;
+    word-wrap:normal;
   }
 }
