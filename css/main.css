@@ -9,8 +9,10 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 300;
+  font-family:
+    'ヒラギノ丸ゴ Pro W4', 'Hiragino Maru Gothic Pro',
+    'UD デジタル 教科書体 NK-R', 　Meiryo, 'メイリオ',
+    'Lucida Grande', Verdana, Osaka, sans-serif;  font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -143,11 +145,19 @@ section pre:nth-child(2) {
 /* フッター */
 
 footer {
-  background-color: var(--brand-color);
-  color: #fff;
+  background-color: #454545;
+  color: #c0c0c0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+footer > div {
   display: flex;
   justify-content: space-between;
-  padding: 10px var(--side-margin);
+  max-width: var(--page-width);
+  padding-bottom: 10px;
+  padding-top: 10px;
   width: 100%;
 }
 
@@ -166,12 +176,12 @@ footer li {
 }
 
 footer a {
-  color: #ffffff;
+  color: #c0c0c0;
   text-decoration: none;
 }
 
 footer a:hover, footer a:active {
-  color: #bdffb6;
+  color: #fff;
 }
 
 /* ソースコードの色付け */
@@ -190,8 +200,10 @@ code {
 li.L0, li.L1, li.L2, li.L3, li.L4,
 li.L5, li.L6, li.L7, li.L8, li.L9 {
   color: #000;
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 0.8rem;
   list-style-type: decimal !important;
-  margin-left: 2em;
+  margin-left: 3em;
   padding-left: 16px;
 }
 
