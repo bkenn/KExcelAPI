@@ -239,7 +239,7 @@ li.L5, li.L6, li.L7, li.L8, li.L9 {
     word-wrap: normal;
   }
 
-  footer {
+  footer > div {
     display: block;
   }
 
