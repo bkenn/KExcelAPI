@@ -243,6 +243,10 @@ li.L5, li.L6, li.L7, li.L8, li.L9 {
     display: block;
   }
 
+  footer > div > div:last-child {
+    margin-top: 10px;
+  }
+
   footer ul {
     display: block;
   }
