@@ -17,7 +17,6 @@ body {
 }
 
 body {
-  align-items: center;
   background-color: #fff;
   color: var(--font-color);
   display: flex;
@@ -42,7 +41,6 @@ a:hover, a:active {
 
 header {
   padding: 10px var(--side-margin);
-  width: 100%;
 }
 
 .logo {
