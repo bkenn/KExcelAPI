@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cf86cc6-dfc1-41af-a446-6405ddfca94d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image/og.png" afterPath="$PROJECT_DIR$/image/og.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +18,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="338">
-                  <caret line="77" column="76" lean-forward="false" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
+                <state relative-caret-position="653">
+                  <caret line="77" column="127" lean-forward="true" selection-start-line="77" selection-start-column="127" selection-end-line="77" selection-end-column="127" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#a#1;n#div#2;n#div#0;n#article#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -140,12 +140,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/image" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -174,12 +174,12 @@
       <workItem from="1507971609248" duration="105000" />
       <workItem from="1508311534892" duration="3498000" />
       <workItem from="1508405019881" duration="685000" />
-      <workItem from="1508548724135" duration="1310000" />
+      <workItem from="1508548724135" duration="1597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41940000" />
+    <option name="totallyTimeSpent" value="42227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="225" y="23" width="1428" height="989" extended-state="0" />
@@ -309,10 +309,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/image/og.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="77" column="76" lean-forward="false" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
+        <state relative-caret-position="653">
+          <caret line="77" column="127" lean-forward="true" selection-start-line="77" selection-start-column="127" selection-end-line="77" selection-end-column="127" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#1;n#div#2;n#div#0;n#article#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
