@@ -66,6 +66,14 @@ main {
   margin: 30px auto 100px auto;
 }
 
+.snsButton {
+  margin-top: 15px;
+}
+
+.pocket-btn {
+  display: inline-block;
+}
+
 h1 {
   align-items: center;
   display: flex;
