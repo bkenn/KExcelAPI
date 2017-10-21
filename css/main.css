@@ -74,6 +74,12 @@ main {
   display: inline-block;
 }
 
+.logo-made {
+  font-size: 0.6rem !important;
+  font-weight: 300 !important;
+  line-height: 1rem;
+}
+
 h1 {
   align-items: center;
   display: flex;
